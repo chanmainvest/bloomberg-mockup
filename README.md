@@ -2,6 +2,8 @@
 
 Captured Bloomberg Terminal screens for **AMD US Equity** (session May 20–21, 2026). This folder is a **standalone git repository** (MIT license).
 
+**Interactive mockup:** [https://chanmainvest.github.io/bloomberg-mockup/](https://chanmainvest.github.io/bloomberg-mockup/)
+
 ## Contents
 
 | Path | Description |
