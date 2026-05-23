@@ -1,0 +1,2730 @@
+[
+  {
+    "folder": "BTST",
+    "blob": "",
+    "page_code": "BTST",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "BTST - BTST (unlabeled)"
+  },
+  {
+    "folder": "BTST",
+    "blob": "1779330605529",
+    "page_code": "BTST",
+    "tab": "table",
+    "sub_tab": "1_table",
+    "description": "Backtesting Multi-Strategy - strategy performance rankings table"
+  },
+  {
+    "folder": "BTST",
+    "blob": "1779330617169",
+    "page_code": "BTST",
+    "tab": "chart",
+    "sub_tab": "chart",
+    "description": "Backtesting Multi-Strategy - multi-indicator overlay chart"
+  },
+  {
+    "folder": "BTST",
+    "blob": "1779330626772",
+    "page_code": "BTST",
+    "tab": "scatter_plot",
+    "sub_tab": "scatter_plot",
+    "description": "Backtesting Multi-Strategy - strategy scatter plot comparison"
+  },
+  {
+    "folder": "BTST",
+    "blob": "1779330637587",
+    "page_code": "BTST",
+    "tab": "table",
+    "sub_tab": "distribution_summary",
+    "description": "Backtesting Multi-Strategy - distribution summary and detailed results table"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323433733",
+    "page_code": "FA",
+    "tab": "cash_flow",
+    "sub_tab": "standardized",
+    "description": "Financial Analysis - Cash Flow standardized"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323451783",
+    "page_code": "FA",
+    "tab": "cash_flow",
+    "sub_tab": "as_reported",
+    "description": "Financial Analysis - Cash Flow as reported"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323463751",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "profitability",
+    "description": "Financial Analysis - Profitability ratios"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323479327",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "growth_1yr",
+    "description": "Financial Analysis - 1 Year Growth metrics"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323490620",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "credit",
+    "description": "Financial Analysis - Credit ratios"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323501066",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "credit_ex_operating_leases",
+    "description": "Financial Analysis - Credit Ex Operating Leases"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323510904",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "liquidity",
+    "description": "Financial Analysis - Liquidity ratios"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323521422",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "working_capital",
+    "description": "Financial Analysis - Working Capital ratios"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323531559",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "yield_analysis",
+    "description": "Financial Analysis - Yield Analysis T12 cash flows"
+  },
+  {
+    "folder": "CF Ratios",
+    "blob": "1779323546459",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "dupont_analysis",
+    "description": "Financial Analysis - DuPont Analysis"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326837890",
+    "page_code": "CP",
+    "tab": "analyze",
+    "sub_tab": "overview",
+    "description": "CP - Company Profile analyze overview"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326861973",
+    "page_code": "CP",
+    "tab": "analyze",
+    "sub_tab": "key_insights",
+    "description": "CP - Company Profile key insights"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326875092",
+    "page_code": "CP",
+    "tab": "reports",
+    "sub_tab": "news_activity",
+    "description": "CP - Company Profile news and stock price history"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326892973",
+    "page_code": "CP",
+    "tab": "analyze",
+    "sub_tab": "intelligence",
+    "description": "CP - Company Profile industry intelligence feed"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326903962",
+    "page_code": "CP",
+    "tab": "financials",
+    "sub_tab": "income_statement",
+    "description": "CP - Company Profile financials and enterprise value"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326914195",
+    "page_code": "CP",
+    "tab": "mgmt_board",
+    "sub_tab": "executives_and_board",
+    "description": "CP - Company Profile management and board roster"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326923692",
+    "page_code": "CP",
+    "tab": "analyze",
+    "sub_tab": "description",
+    "description": "CP - Company Profile description and classification"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326936117",
+    "page_code": "CP",
+    "tab": "equity",
+    "sub_tab": "comparables",
+    "description": "CP - Company Profile equity comparables RV table"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326948615",
+    "page_code": "CP",
+    "tab": "equity",
+    "sub_tab": "estimates",
+    "description": "CP - Company Profile estimates consensus and revisions"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326959975",
+    "page_code": "CP",
+    "tab": "equity",
+    "sub_tab": "analyst_ratings",
+    "description": "CP - Company Profile analyst ratings and peer ratings"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326972302",
+    "page_code": "CP",
+    "tab": "equity",
+    "sub_tab": "shareholders",
+    "description": "CP - Company Profile major shareholders HDS"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779326985836",
+    "page_code": "CP",
+    "tab": "credit",
+    "sub_tab": "credit_profile",
+    "description": "CP - Company Profile credit profile CAST CRPR DDIS"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327009355",
+    "page_code": "CP",
+    "tab": "credit",
+    "sub_tab": "comparables",
+    "description": "CP - Company Profile credit comparable analysis CCA"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327021299",
+    "page_code": "CP",
+    "tab": "credit",
+    "sub_tab": "bond_holders",
+    "description": "CP - Company Profile major bond holders AGGD"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327036327",
+    "page_code": "CP",
+    "tab": "transactions",
+    "sub_tab": "company_deals",
+    "description": "CP - Company Profile recent company deals"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327085381",
+    "page_code": "CP",
+    "tab": "transactions",
+    "sub_tab": "industry_deals_ma",
+    "description": "CP - Company Profile industry M&A deals comps"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327120961",
+    "page_code": "CP",
+    "tab": "transactions",
+    "sub_tab": "industry_deals_ipo",
+    "description": "CP - Company Profile industry equity offerings IPO"
+  },
+  {
+    "folder": "CP",
+    "blob": "1779327134789",
+    "page_code": "CP",
+    "tab": "transactions",
+    "sub_tab": "industry_deals_debt",
+    "description": "CP - Company Profile industry debt issuance SRCH"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779330990096",
+    "page_code": "EE",
+    "tab": "research_estimates",
+    "sub_tab": "menu",
+    "description": "Research & Estimates function menu overlay"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331003435",
+    "page_code": "EE",
+    "tab": "earnings_estimates",
+    "sub_tab": "earnings_estimates",
+    "description": "Earnings & Estimates main dashboard overview"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331015433",
+    "page_code": "EEO",
+    "tab": "headline",
+    "sub_tab": "1_headline",
+    "description": "Consensus Overview - Headline quarterly estimates"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331025901",
+    "page_code": "ANR",
+    "tab": "analyst_recommendations",
+    "sub_tab": "analyst_recommendations",
+    "description": "Analyst Recommendations with consensus chart and analyst table"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331055119",
+    "page_code": "ERN",
+    "tab": "earnings_history",
+    "sub_tab": "1_earnings_history",
+    "description": "Earnings History with surprise snapshot and quarterly table"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331068367",
+    "page_code": "EM",
+    "tab": "earnings_trends",
+    "sub_tab": "earnings_trends",
+    "description": "Earnings Trends quarterly EPS and valuation multiples"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331090851",
+    "page_code": "EEB",
+    "tab": "estimate_consensus_detail",
+    "sub_tab": "estimate_consensus_detail",
+    "description": "Estimate Consensus Detail - EPS analyst breakdown"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331103803",
+    "page_code": "ANRP",
+    "tab": "analyst_ranking",
+    "sub_tab": "analyst_ranking",
+    "description": "Analyst Ranking table by firm and performance score"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331118333",
+    "page_code": "SURP",
+    "tab": "earnings_history",
+    "sub_tab": "price_reaction_and_surprise",
+    "description": "Earnings History Price Reaction and Surprise analysis charts"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331141437",
+    "page_code": "GUID",
+    "tab": "guidance",
+    "sub_tab": "company_guidance",
+    "description": "Company Guidance annual revenue and margin guidance table"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331167747",
+    "page_code": "EE",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "EE - EE (unlabeled)"
+  },
+  {
+    "folder": "EE",
+    "blob": "1779331198586",
+    "page_code": "EE",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "EE - EE (unlabeled)"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328654795",
+    "page_code": "EQRV",
+    "tab": "vs_comps",
+    "sub_tab": "premium_analysis",
+    "description": "EQRV - Analysis of multiples premium to comps"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328668112",
+    "page_code": "EQRV",
+    "tab": "vs_comps",
+    "sub_tab": "bf_p_e_peers",
+    "description": "EQRV - Peers benchmarked BF P/E vs group average"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328683188",
+    "page_code": "EQRV",
+    "tab": "vs_self",
+    "sub_tab": "2y_historical",
+    "description": "EQRV - vs self 2Y historical multiples and BF P/E chart"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328711456",
+    "page_code": "KPIC",
+    "tab": "dashboards_by_security",
+    "sub_tab": "single_period",
+    "description": "KPIC - KPI comparison dashboards by security"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328736387",
+    "page_code": "TCA",
+    "tab": "transaction_cost_analysis",
+    "sub_tab": "vwap_execution",
+    "description": "TCA - Transaction cost analysis VWAP execution scenarios"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328751260",
+    "page_code": "AVAT",
+    "tab": "volume",
+    "sub_tab": "average_value_at_time",
+    "description": "AVAT - Average value at time volume prediction"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328762841",
+    "page_code": "AVAT",
+    "tab": "spread",
+    "sub_tab": "spread_20_day",
+    "description": "AVAT - Intraday spread 20-day profile"
+  },
+  {
+    "folder": "EQRV",
+    "blob": "1779328786830",
+    "page_code": "AVAT",
+    "tab": "trade_quote",
+    "sub_tab": "intraday_activity",
+    "description": "AVAT - Trade quote intraday activity metrics"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328023415",
+    "page_code": "EV",
+    "tab": "enterprise_value",
+    "sub_tab": "summary",
+    "description": "EV - Enterprise value bridge and history"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328047176",
+    "page_code": "TRA",
+    "tab": "chart",
+    "sub_tab": "total_return_analysis",
+    "description": "TRA - Total return analysis 1Y chart"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328066788",
+    "page_code": "SI",
+    "tab": "short_interest",
+    "sub_tab": "chart",
+    "description": "SI - Short interest and price chart"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328085256",
+    "page_code": "DRSK",
+    "tab": "info",
+    "sub_tab": "history",
+    "description": "DRSK - Default risk history and sector comparison"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328097428",
+    "page_code": "CRSR",
+    "tab": "credit_coverage_search",
+    "sub_tab": "search",
+    "description": "CRSR - Credit coverage search results"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328113283",
+    "page_code": "COLT",
+    "tab": "collateral",
+    "sub_tab": "margin_eligibility",
+    "description": "COLT - OTC collateral margin eligibility review"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328160153",
+    "page_code": "MIPD",
+    "tab": "company_analysis",
+    "sub_tab": "90_day_historical",
+    "description": "MIPD - Market implied probability of default 90-day history"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328172795",
+    "page_code": "FRSA",
+    "tab": "related_functions",
+    "sub_tab": "activation",
+    "description": "FRSA - FRTB SA bucketing activation page"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328192196",
+    "page_code": "MIPD",
+    "tab": "company_analysis",
+    "sub_tab": "term_structure_yield",
+    "description": "MIPD - Term structure yield curve"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328220567",
+    "page_code": "MIPD",
+    "tab": "company_analysis",
+    "sub_tab": "term_structure_pd",
+    "description": "MIPD - Term structure 1-year PD history"
+  },
+  {
+    "folder": "Ev",
+    "blob": "1779328236743",
+    "page_code": "MPDS",
+    "tab": "related_functions",
+    "sub_tab": "implied_pd_coverage",
+    "description": "MPDS - Implied PD coverage search"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323692748",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "benchmark",
+    "description": "Financial Analysis - Ratios benchmark vs S&P 500 IT"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323724611",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "contractual_obligations",
+    "description": "Financial Analysis - Contractual Obligations debt and leases"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323738735",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "options",
+    "description": "Financial Analysis - Stock options and RSU activity"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323749951",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "employee_data",
+    "description": "Financial Analysis - Employee data metrics"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323760002",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "fixed_charge",
+    "description": "Financial Analysis - Fixed Charge coverage ratios"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323771802",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "capex_depreciation",
+    "description": "Financial Analysis - CAPEX and Depreciation"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323785142",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "overview",
+    "description": "Financial Analysis - Additional overview summary"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323797978",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "as_reported_summary",
+    "description": "Financial Analysis - As Reported Summary"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323808025",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "dividend_summary",
+    "description": "Financial Analysis - Dividend Summary no dividends"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323824613",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "source_use_of_capital",
+    "description": "Financial Analysis - Source and Use of Capital"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323841985",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "comprehensive_income",
+    "description": "Financial Analysis - Comprehensive Income"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323857324",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "income_statement_chart",
+    "description": "Financial Analysis - Income Statement chart annual"
+  },
+  {
+    "folder": "FA-Addl",
+    "blob": "1779323878957",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "balance_sheet_chart",
+    "description": "Financial Analysis - Balance Sheet chart annual"
+  },
+  {
+    "folder": "MGMT committees",
+    "blob": "1779327394944",
+    "page_code": "MGMT",
+    "tab": "committees",
+    "sub_tab": "board_committees",
+    "description": "MGMT - Board committees audit compensation innovation nominating"
+  },
+  {
+    "folder": "MGMT committees",
+    "blob": "1779327433000",
+    "page_code": "MGMT",
+    "tab": "committees",
+    "sub_tab": "direct_relationships",
+    "description": "MGMT - Committees direct cross-board relationships"
+  },
+  {
+    "folder": "MGMT committees",
+    "blob": "1779327460671",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "board_vs_peers_summary",
+    "description": "MGMT - Board and executives vs peer averages summary"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330794652",
+    "page_code": "MKTP",
+    "tab": "chart",
+    "sub_tab": "market_picture_chart",
+    "description": "Market Picture Chart - volume profile for AMD US Equity"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330809017",
+    "page_code": "SEAG",
+    "tab": "chart",
+    "sub_tab": "seasonality_chart",
+    "description": "Seasonality Chart - normalized yearly performance lines"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330818929",
+    "page_code": "HRH",
+    "tab": "histogram",
+    "sub_tab": "historical_return_histogram",
+    "description": "Historical Return Histogram with price series"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330837604",
+    "page_code": "MGR",
+    "tab": "chart",
+    "sub_tab": "multi_security_ratio_graph",
+    "description": "Multi Security Ratio Graph - AMD vs SPX normalized return"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330850692",
+    "page_code": "GP",
+    "tab": "chart",
+    "sub_tab": "multi_moving_average_chart",
+    "description": "GP Multi Moving Average price chart with volume"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330867666",
+    "page_code": "GPO",
+    "tab": "chart",
+    "sub_tab": "hindenburg_omen",
+    "description": "GPO Hindenburg Omen study on NYSE Composite Index"
+  },
+  {
+    "folder": "MKTP",
+    "blob": "1779330922323",
+    "page_code": "RPC",
+    "tab": "chart",
+    "sub_tab": "relative_performance_chart",
+    "description": "Relative Performance Chart vs semiconductor peers"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325593833",
+    "page_code": "OMON",
+    "tab": "option_monitor",
+    "sub_tab": "calls_puts_chain",
+    "description": "Option Monitor - Full options chain calls and puts"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325647887",
+    "page_code": "OMON",
+    "tab": "option_monitor",
+    "sub_tab": "calls_puts",
+    "description": "Option Monitor - Calls and puts by expiration"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325658199",
+    "page_code": "OMON",
+    "tab": "option_monitor",
+    "sub_tab": "calls",
+    "description": "Option Monitor - Calls only chain"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325675577",
+    "page_code": "OMON",
+    "tab": "option_monitor",
+    "sub_tab": "puts",
+    "description": "Option Monitor - Puts only chain"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325699200",
+    "page_code": "OMON",
+    "tab": "option_monitor",
+    "sub_tab": "moneyness",
+    "description": "Option Monitor - Moneyness grid by expiration"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325714247",
+    "page_code": "OMON",
+    "tab": "term_structure",
+    "sub_tab": "main",
+    "description": "Option Monitor - Implied vol term structure matrix"
+  },
+  {
+    "folder": "OMON",
+    "blob": "1779325735003",
+    "page_code": "OMON",
+    "tab": "flex",
+    "sub_tab": "main",
+    "description": "Option Monitor - FLEX options list"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779325844135",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "open_interest",
+    "description": "Option Expiration - Open interest heatmap by moneyness"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779325875828",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "multi_expiry_oi",
+    "description": "Option Expiration - Multi expiry open interest chart"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779325899373",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "single_expiry",
+    "description": "Option Expiration - Single expiry 22-May-26 notional view"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779325954798",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "volume_by_date",
+    "description": "Option Expiration - Volume heatmap by expiry date"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779325970681",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "volume",
+    "description": "Option Expiration - Volume heatmap"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779326004093",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "volume_tenor",
+    "description": "Option Expiration - Volume by tenor buckets"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779326028720",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "volume_multi_expiry",
+    "description": "Option Expiration - Multi expiry volume heatmap"
+  },
+  {
+    "folder": "OPX",
+    "blob": "1779326050955",
+    "page_code": "OPX",
+    "tab": "option_expiration",
+    "sub_tab": "volume_strike_expiry",
+    "description": "Option Expiration - Volume by strike and expiry"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328445984",
+    "page_code": "PBAR",
+    "tab": "markets",
+    "sub_tab": "peers",
+    "description": "PBAR - Peer barometer markets tab"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328467294",
+    "page_code": "PBAR",
+    "tab": "overview",
+    "sub_tab": "peer_barometer",
+    "description": "PBAR - Peer barometer overview VWAP beta returns"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328476392",
+    "page_code": "PBAR",
+    "tab": "developments",
+    "sub_tab": "peer_news",
+    "description": "PBAR - Developments and peer headlines"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328485858",
+    "page_code": "PBAR",
+    "tab": "valuation",
+    "sub_tab": "fields",
+    "description": "PBAR - Valuation multiples peer comparison"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328496602",
+    "page_code": "PBAR",
+    "tab": "estimates",
+    "sub_tab": "eps_adjusted",
+    "description": "PBAR - EPS adjusted estimates and revisions"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328507355",
+    "page_code": "PBAR",
+    "tab": "recommendations",
+    "sub_tab": "analyst_sentiment",
+    "description": "PBAR - Analyst recommendations and targets"
+  },
+  {
+    "folder": "PBAR",
+    "blob": "1779328522428",
+    "page_code": "PBAR",
+    "tab": "credit",
+    "sub_tab": "cds_spreads",
+    "description": "PBAR - Credit CDS spreads and ratings peers"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779328979319",
+    "page_code": "RV",
+    "tab": "overview",
+    "sub_tab": "relative_valuation",
+    "description": "RV - Relative valuation overview and peer table"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779328992650",
+    "page_code": "WACC",
+    "tab": "valuation",
+    "sub_tab": "cost_of_capital",
+    "description": "WACC - Weighted average cost of capital and EVA"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329005213",
+    "page_code": "EORP",
+    "tab": "summary",
+    "sub_tab": "equity_risk_premium",
+    "description": "EORP - Equity risk premium summary"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329018292",
+    "page_code": "EORP",
+    "tab": "summary",
+    "sub_tab": "history",
+    "description": "EORP - Equity risk premium quarterly history"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329036732",
+    "page_code": "BETA",
+    "tab": "statistics",
+    "sub_tab": "historical_beta",
+    "description": "BETA - Historical beta regression vs SPX"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329053318",
+    "page_code": "DDM",
+    "tab": "valuation",
+    "sub_tab": "dividend_discount_model",
+    "description": "DDM - Dividend discount model assumptions"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329067568",
+    "page_code": "EQRV",
+    "tab": "price_bands",
+    "sub_tab": "vs_self",
+    "description": "EQRV - Price bands vs self LTM P/E"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329080402",
+    "page_code": "EQRV",
+    "tab": "vs_self",
+    "sub_tab": "blended_forward_p_e",
+    "description": "EQRV - vs self blended forward P/E history"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329107234",
+    "page_code": "EQRV",
+    "tab": "vs_comps",
+    "sub_tab": "peers_benchmarked",
+    "description": "EQRV - vs comps peers benchmarked BF P/E"
+  },
+  {
+    "folder": "RV",
+    "blob": "1779329128362",
+    "page_code": "PEBD",
+    "tab": "vs_comps",
+    "sub_tab": "premium_to_comps",
+    "description": "PEBD - Premium to comps analysis summary table"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331241671",
+    "page_code": "ALTD",
+    "tab": "quarter_to_date",
+    "sub_tab": "1_quarter_to_date",
+    "description": "Alternative Data - Quarter-To-Date revenue estimate from Similarweb"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331248763",
+    "page_code": "ALTD",
+    "tab": "overview",
+    "sub_tab": "overview",
+    "description": "Alternative Data - Overview YoY growth vs revenue consensus"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331255295",
+    "page_code": "ALTD",
+    "tab": "overview",
+    "sub_tab": "overview",
+    "description": "Alternative Data - Overview with KPI estimate summary panel"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331262005",
+    "page_code": "ALTD",
+    "tab": "kpi_correlation",
+    "sub_tab": "kpi_correlation",
+    "description": "Alternative Data - KPI Correlation historical accuracy chart"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331270693",
+    "page_code": "ALTD",
+    "tab": "overview",
+    "sub_tab": "peer_summary",
+    "description": "Alternative Data - Peer Summary web traffic heatmap"
+  },
+  {
+    "folder": "altd",
+    "blob": "1779331287196",
+    "page_code": "ALTD",
+    "tab": "trend_analysis",
+    "sub_tab": "trend_analysis",
+    "description": "Alternative Data - Trend Analysis YoY monthly web traffic"
+  },
+  {
+    "folder": "bbk",
+    "blob": "1779327761032",
+    "page_code": "BBK",
+    "tab": "buybacks",
+    "sub_tab": "program_summary",
+    "description": "BBK - Buyback program summary and execution charts"
+  },
+  {
+    "folder": "bbk",
+    "blob": "1779327834832",
+    "page_code": "SPOS",
+    "tab": "short_positions",
+    "sub_tab": "single_security_mode",
+    "description": "SPOS - Short positions single security search"
+  },
+  {
+    "folder": "bbk",
+    "blob": "1779327940348",
+    "page_code": "HDSM",
+    "tab": "matrix_settings",
+    "sub_tab": "security_ownership_matrix",
+    "description": "HDSM - Security ownership matrix top holders"
+  },
+  {
+    "folder": "bbk",
+    "blob": "1779327961097",
+    "page_code": "INSD",
+    "tab": "insider_activity",
+    "sub_tab": "buys",
+    "description": "INSD - Insider and shareholder buy activity ranked"
+  },
+  {
+    "folder": "bbk",
+    "blob": "1779327979108",
+    "page_code": "OWN",
+    "tab": "current",
+    "sub_tab": "insider_transactions",
+    "description": "OWN - Insider transactions and Form 144 filings"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332262852",
+    "page_code": "BDR",
+    "tab": "regression_analysis",
+    "sub_tab": "regression_analysis",
+    "description": "BDR Regression Analysis - A1MD34 BZ vs IBOV Index scatter and stats"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332303224",
+    "page_code": "OTD",
+    "tab": "option_description",
+    "sub_tab": "1_detail",
+    "description": "Option Description - A1MD34 BZ call contract detail and option chain"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332437275",
+    "page_code": "CT",
+    "tab": "table",
+    "sub_tab": "futures_contract_table",
+    "description": "Futures Contract Table for AMD US Equity"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332449370",
+    "page_code": "WMON",
+    "tab": "table",
+    "sub_tab": "warrant_monitor",
+    "description": "Warrant Monitor for AMD US Equity"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332463687",
+    "page_code": "OVME",
+    "tab": "pricing",
+    "sub_tab": "1_pricing",
+    "description": "Option Pricer Equity - American vanilla call pricing and greeks"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332507908",
+    "page_code": "OVME",
+    "tab": "matrix",
+    "sub_tab": "matrix",
+    "description": "Option Pricer Equity - Matrix by maturity and moneyness"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332523428",
+    "page_code": "OPDF",
+    "tab": "dividends",
+    "sub_tab": "11_dividends",
+    "description": "Equity Derivatives Settings - Dividends tab"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332543674",
+    "page_code": "CWS",
+    "tab": "calls",
+    "sub_tab": "9_expiry",
+    "description": "Covered Option Write Calculator - Calls expiry strike table"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332567327",
+    "page_code": "GIV",
+    "tab": "chart",
+    "sub_tab": "intraday_volatility_graph",
+    "description": "Intraday Volatility Graph for AMD call option"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332578444",
+    "page_code": "GV",
+    "tab": "chart",
+    "sub_tab": "graph_volatility",
+    "description": "Graph Volatility - BVOL vs historical vol comparison"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332591782",
+    "page_code": "HVG",
+    "tab": "chart",
+    "sub_tab": "historical_volatility_graph",
+    "description": "Historical Volatility Graph with multiple lookback periods"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332604192",
+    "page_code": "HVT",
+    "tab": "table",
+    "sub_tab": "historical_volatility_table",
+    "description": "Historical Volatility Table with daily vol and implied vol"
+  },
+  {
+    "folder": "bdr",
+    "blob": "1779332617255",
+    "page_code": "HIVG",
+    "tab": "chart",
+    "sub_tab": "historical_implied_volatility_graph",
+    "description": "Historical Implied Volatility Graph - hist vol vs price vs implied vol"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321535699",
+    "page_code": "DES",
+    "tab": "profile",
+    "sub_tab": "corporate_info",
+    "description": "Security Description - Corporate Info modal"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321559346",
+    "page_code": "DES",
+    "tab": "related_functions",
+    "sub_tab": "main",
+    "description": "Security Description - Launching company website"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321586141",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "main",
+    "description": "Company Management - Executives list"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321615956",
+    "page_code": "BIO",
+    "tab": "people_profiles",
+    "sub_tab": "lisa_su",
+    "description": "People Profiles - Dr Lisa T Su CEO profile"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321668243",
+    "page_code": "BIO",
+    "tab": "people_profiles",
+    "sub_tab": "jean_hu",
+    "description": "People Profiles - Jean X Hu CFO profile"
+  },
+  {
+    "folder": "bloomberg",
+    "blob": "1779321715067",
+    "page_code": "BIO",
+    "tab": "people_profiles",
+    "sub_tab": "mark_papermaster",
+    "description": "People Profiles - Mark D Papermaster CTO profile"
+  },
+  {
+    "folder": "bloomberg pdf",
+    "blob": "",
+    "page_code": "HELP",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "HELP - Bloomberg help PDF (unlabeled)"
+  },
+  {
+    "folder": "bloomberg screencap",
+    "blob": "1779321760983",
+    "page_code": "EE",
+    "tab": "earnings_estimates",
+    "sub_tab": "current_period_overview",
+    "description": "Earnings and Estimates - Current Period Overview Q2/26"
+  },
+  {
+    "folder": "bloomberg screencap",
+    "blob": "1779321801270",
+    "page_code": "ERN",
+    "tab": "earnings_history",
+    "sub_tab": "main",
+    "description": "Earnings History and Price Reaction - Comparable vs Estimate"
+  },
+  {
+    "folder": "bloomberg screencap",
+    "blob": "1779321832179",
+    "page_code": "EE",
+    "tab": "earnings_history",
+    "sub_tab": "price_reaction_surprise",
+    "description": "Earnings History - Price Reaction and Surprise"
+  },
+  {
+    "folder": "bloomberg screencap",
+    "blob": "1779321912450",
+    "page_code": "MODL",
+    "tab": "company_financials",
+    "sub_tab": "main",
+    "description": "Company Financials - Annual model with segment revenue"
+  },
+  {
+    "folder": "buyp",
+    "blob": "1779327663706",
+    "page_code": "BUYP",
+    "tab": "overview",
+    "sub_tab": "buyer_intent_profile",
+    "description": "BUYP - M&A Buyer Intent Profile overview"
+  },
+  {
+    "folder": "buyp",
+    "blob": "1779327675906",
+    "page_code": "BUYP",
+    "tab": "scatter_chart",
+    "sub_tab": "deal_history",
+    "description": "BUYP - Deal scatter chart by sector and date"
+  },
+  {
+    "folder": "buyp",
+    "blob": "1779327697812",
+    "page_code": "BUYP",
+    "tab": "deal_distribution",
+    "sub_tab": "time_series",
+    "description": "BUYP - Deal distribution annual time series"
+  },
+  {
+    "folder": "buyp",
+    "blob": "1779327707334",
+    "page_code": "BUYP",
+    "tab": "acquisition_criteria",
+    "sub_tab": "inferred",
+    "description": "BUYP - Inferred acquisition criteria"
+  },
+  {
+    "folder": "buyp",
+    "blob": "1779327716049",
+    "page_code": "BUYP",
+    "tab": "advisers",
+    "sub_tab": "financial",
+    "description": "BUYP - Financial advisers ranked by deal value"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325002588",
+    "page_code": "CACS",
+    "tab": "corporate_actions",
+    "sub_tab": "actions_for_company",
+    "description": "Corporate Actions - Company actions list acquisitions and buybacks"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325029425",
+    "page_code": "DES",
+    "tab": "issue_info",
+    "sub_tab": "public_offerings_details",
+    "description": "Security Description - Public Offerings split details modal"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325055956",
+    "page_code": "RELS",
+    "tab": "related_securities",
+    "sub_tab": "table",
+    "description": "Related Securities - Entity hierarchy table"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325070353",
+    "page_code": "SRCH",
+    "tab": "fixed_income",
+    "sub_tab": "bonds",
+    "description": "Fixed Income Search - AMD bonds results"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325088668",
+    "page_code": "SECF",
+    "tab": "equities",
+    "sub_tab": "stocks",
+    "description": "Security Finder - AMD global stock listings"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325136281",
+    "page_code": "SECF",
+    "tab": "equities",
+    "sub_tab": "warrants",
+    "description": "Security Finder - AMD warrants listings"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325154462",
+    "page_code": "HLDR",
+    "tab": "holder_ownership",
+    "sub_tab": "main",
+    "description": "Holder Ownership - Corporate passive holders of AMD"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325228625",
+    "page_code": "RELS",
+    "tab": "entity_profile",
+    "sub_tab": "main",
+    "description": "Related Securities - Entity profile fundamentals dashboard"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325271826",
+    "page_code": "OWN",
+    "tab": "ownership_summary",
+    "sub_tab": "main",
+    "description": "Ownership Summary - Institutional and insider breakdown"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325335813",
+    "page_code": "HDS",
+    "tab": "current",
+    "sub_tab": "all_holders",
+    "description": "Security Ownership - Current all holders sorted by size"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325349305",
+    "page_code": "HDS",
+    "tab": "historical",
+    "sub_tab": "quarterly",
+    "description": "Security Ownership - Historical quarterly holder positions"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325386842",
+    "page_code": "HDS",
+    "tab": "historical",
+    "sub_tab": "peer_index",
+    "description": "Security Ownership - Historical peer index comparison"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325404036",
+    "page_code": "HDS",
+    "tab": "current",
+    "sub_tab": "top_50_holders",
+    "description": "Security Ownership - Top 50 holders peer view"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325414051",
+    "page_code": "HDS",
+    "tab": "ownership_summary",
+    "sub_tab": "main",
+    "description": "Security Ownership - Ownership summary panels"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325433375",
+    "page_code": "HDS",
+    "tab": "insider_transactions",
+    "sub_tab": "main",
+    "description": "Security Ownership - Insider transactions table"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325501328",
+    "page_code": "HDS",
+    "tab": "options",
+    "sub_tab": "all_holders",
+    "description": "Security Ownership - Options all holders"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325524389",
+    "page_code": "HDS",
+    "tab": "options",
+    "sub_tab": "group_by_holder",
+    "description": "Security Ownership - Options grouped by holder"
+  },
+  {
+    "folder": "cacs",
+    "blob": "1779325547236",
+    "page_code": "HDS",
+    "tab": "issuer_debt",
+    "sub_tab": "main",
+    "description": "Security Ownership - Issuer debt holdings"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779331760434",
+    "page_code": "MKTP",
+    "tab": "table",
+    "sub_tab": "global_equity_indices",
+    "description": "Market monitor - Global Equity Indices Americas watchlist"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779331781714",
+    "page_code": "MKTP",
+    "tab": "table",
+    "sub_tab": "global_commodities",
+    "description": "Market monitor - Global Commodities watchlist"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779331791119",
+    "page_code": "MKTP",
+    "tab": "table",
+    "sub_tab": "global_fx",
+    "description": "Market monitor - Global FX currency pairs watchlist"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332049017",
+    "page_code": "COMP",
+    "tab": "comparative_returns",
+    "sub_tab": "comparative_returns",
+    "description": "Comparative Returns vs SPX and S5INFT with performance chart"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332062413",
+    "page_code": "RG",
+    "tab": "relative_graphs",
+    "sub_tab": "relative_graphs",
+    "description": "Relative Graphs - AMD vs benchmark relative return chart"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332072108",
+    "page_code": "BDR",
+    "tab": "receipt_premium_discount",
+    "sub_tab": "1_receipt_premium_discount",
+    "description": "Receipt Premium/Discount chart for A1MD34 BZ BDR"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332096919",
+    "page_code": "SA",
+    "tab": "spread_analysis",
+    "sub_tab": "spread_analysis",
+    "description": "Spread Analysis - A1MD34 BZ vs IBOV with spread summary"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332110372",
+    "page_code": "GR",
+    "tab": "ratio_analysis",
+    "sub_tab": "ratio_analysis",
+    "description": "Ratio Analysis chart - A1MD34 BZ vs IBOV Index"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332121003",
+    "page_code": "GR",
+    "tab": "analytics_menu",
+    "sub_tab": "ratio_analysis",
+    "description": "Comparative analytics menu with Ratio Analysis selected"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332162874",
+    "page_code": "MRSG",
+    "tab": "chart",
+    "sub_tab": "multi_security_ratio_graph",
+    "description": "Multi Security Ratio Graph - AMD vs IBOV with MU and NVDA"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332179072",
+    "page_code": "MOST",
+    "tab": "table",
+    "sub_tab": "most_active",
+    "description": "Most Active Securities ranked by volume"
+  },
+  {
+    "folder": "chart",
+    "blob": "1779332238232",
+    "page_code": "GX",
+    "tab": "cross_sectional",
+    "sub_tab": "cross_sectional",
+    "description": "Graphical Cross Sectional - P/E ratio peer comparison"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330023793",
+    "page_code": "CHRT",
+    "tab": "chart_library",
+    "sub_tab": "chart_library_menu",
+    "description": "CHRT - Chart Library related functions menu"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330036184",
+    "page_code": "CHRT",
+    "tab": "chart_library",
+    "sub_tab": "price_and_volume_charts",
+    "description": "CHRT - Price and volume charts selection menu"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330067119",
+    "page_code": "GP",
+    "tab": "chart",
+    "sub_tab": "line_chart",
+    "description": "GP - Line chart 1Y price and volume"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330083360",
+    "page_code": "GPO",
+    "tab": "chart",
+    "sub_tab": "bar_chart",
+    "description": "GPO - Bar chart with moving averages"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330094475",
+    "page_code": "GPC",
+    "tab": "chart",
+    "sub_tab": "candle_chart",
+    "description": "GPC - Candle chart with moving averages"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330105307",
+    "page_code": "GIP",
+    "tab": "chart",
+    "sub_tab": "intraday_price_chart",
+    "description": "GIP - Intraday price chart"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330128048",
+    "page_code": "GIPO",
+    "tab": "chart",
+    "sub_tab": "overnight_pre_post_mkt",
+    "description": "GIPO - Overnight pre/post market chart"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330146449",
+    "page_code": "GPHA",
+    "tab": "chart",
+    "sub_tab": "heikin_ashi_chart",
+    "description": "GPHA - Heikin-Ashi daily chart"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330163339",
+    "page_code": "GPF",
+    "tab": "chart",
+    "sub_tab": "fibonacci_retracements",
+    "description": "GPF - Fibonacci retracements study"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330181867",
+    "page_code": "GPA",
+    "tab": "chart",
+    "sub_tab": "calendar_average",
+    "description": "GPA - Calendar average chart monthly"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330196697",
+    "page_code": "GPCA",
+    "tab": "chart",
+    "sub_tab": "corporate_events",
+    "description": "GPCA - Corporate events price graph"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330211684",
+    "page_code": "GP",
+    "tab": "chart",
+    "sub_tab": "line_chart_news",
+    "description": "GP - Line chart with most read news panel"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330237479",
+    "page_code": "GM",
+    "tab": "chart",
+    "sub_tab": "money_flow",
+    "description": "GM - Money flow analysis chart"
+  },
+  {
+    "folder": "charting and reporting",
+    "blob": "1779330276651",
+    "page_code": "GF",
+    "tab": "fundamentals",
+    "sub_tab": "revenue_eps_chart",
+    "description": "GF - Graph fundamentals revenue and EPS"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328267360",
+    "page_code": "CM",
+    "tab": "developments",
+    "sub_tab": "essential_insights",
+    "description": "CM - Company Monitor essential insights"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328294533",
+    "page_code": "CM",
+    "tab": "performance",
+    "sub_tab": "comparative_returns",
+    "description": "CM - Comparative returns vs benchmark"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328305815",
+    "page_code": "CM",
+    "tab": "stakeholders",
+    "sub_tab": "shareholders",
+    "description": "CM - Shareholders ownership summary HDS"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328318685",
+    "page_code": "CM",
+    "tab": "stakeholders",
+    "sub_tab": "debtholders",
+    "description": "CM - Debtholders HDS debt ownership"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328332365",
+    "page_code": "CM",
+    "tab": "performance",
+    "sub_tab": "analysts",
+    "description": "CM - Analyst estimates and deviation chart"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328341460",
+    "page_code": "CM",
+    "tab": "stakeholders",
+    "sub_tab": "analysts_ee_hist",
+    "description": "CM - Analyst EPS estimate history EE HIST"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328351052",
+    "page_code": "CM",
+    "tab": "brokers",
+    "sub_tab": "broker_rankings",
+    "description": "CM - Broker rankings and volume"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328361734",
+    "page_code": "CM",
+    "tab": "performance",
+    "sub_tab": "comparative_returns_3m",
+    "description": "CM - Comparative returns 3M chart"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328372590",
+    "page_code": "CM",
+    "tab": "performance",
+    "sub_tab": "relative_valuation",
+    "description": "CM - Relative valuation EQRV vs self embedded"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328383109",
+    "page_code": "CM",
+    "tab": "news",
+    "sub_tab": "news_activity_chart",
+    "description": "CM - News activity chart GN and CN feed"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328404150",
+    "page_code": "CM",
+    "tab": "news",
+    "sub_tab": "research",
+    "description": "CM - Research BRC delayed research list"
+  },
+  {
+    "folder": "cm",
+    "blob": "1779328414391",
+    "page_code": "CM",
+    "tab": "documents",
+    "sub_tab": "transcripts",
+    "description": "CM - Documents transcripts research filings"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779323920839",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "overview",
+    "description": "Financial Analysis ESG - Overview scores and material topics"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779323946576",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "environmental",
+    "description": "Financial Analysis ESG - Environmental disclosures and emissions"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779323963226",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "social",
+    "description": "Financial Analysis ESG - Social employee and diversity metrics"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779323985447",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "governance",
+    "description": "Financial Analysis ESG - Governance board structure"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324107763",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "exec_dir_comp",
+    "description": "Financial Analysis ESG - Executive and director compensation"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324129142",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "esg_ratios",
+    "description": "Financial Analysis ESG - ESG ratios and GHG intensity"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324154804",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "cdp",
+    "description": "Financial Analysis ESG - CDP climate change data"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324177383",
+    "page_code": "FA",
+    "tab": "esg",
+    "sub_tab": "eu_taxonomy",
+    "description": "Financial Analysis ESG - EU Taxonomy alignment"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324210555",
+    "page_code": "FA",
+    "tab": "custom",
+    "sub_tab": "create_custom",
+    "description": "Financial Analysis - Custom fields create view"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324231497",
+    "page_code": "FA",
+    "tab": "shared",
+    "sub_tab": "main",
+    "description": "Financial Analysis - Shared custom view empty grid"
+  },
+  {
+    "folder": "fa-esg",
+    "blob": "1779324255517",
+    "page_code": "FA",
+    "tab": "key_stats",
+    "sub_tab": "field_search",
+    "description": "Financial Analysis - Field search revenue autocomplete"
+  },
+  {
+    "folder": "hds",
+    "blob": "1779326125809",
+    "page_code": "HDS",
+    "tab": "current",
+    "sub_tab": "all_holders",
+    "description": "Security Ownership - Current institutional holders"
+  },
+  {
+    "folder": "hds",
+    "blob": "1779326205654",
+    "page_code": "EM",
+    "tab": "earnings_trends",
+    "sub_tab": "values_chart",
+    "description": "Earnings Trends - EPS values chart and multiples"
+  },
+  {
+    "folder": "hds",
+    "blob": "1779326217014",
+    "page_code": "EM",
+    "tab": "earnings_trends",
+    "sub_tab": "values_chart",
+    "description": "Earnings Trends - Quarterly EPS estimates table and chart"
+  },
+  {
+    "folder": "hds",
+    "blob": "1779326246719",
+    "page_code": "EM",
+    "tab": "earnings_trends",
+    "sub_tab": "growth_chart",
+    "description": "Earnings Trends - Growth chart YoY and PoP"
+  },
+  {
+    "folder": "hds",
+    "blob": "1779326279381",
+    "page_code": "DES",
+    "tab": "esg",
+    "sub_tab": "5_esg",
+    "description": "Security Description - ESG tab overview"
+  },
+  {
+    "folder": "help pdf",
+    "blob": "2085309",
+    "page_code": "HELP",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "HELP - Bloomberg help PDF (unlabeled)"
+  },
+  {
+    "folder": "help pdf",
+    "blob": "1779324876803",
+    "page_code": "HELP",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "HELP - Bloomberg help PDF (unlabeled)"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330338843",
+    "page_code": "IGPV",
+    "tab": "chart",
+    "sub_tab": "volume_analysis_chart",
+    "description": "Volume Analysis Chart - intraday price and volume panels"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330362120",
+    "page_code": "VBAR",
+    "tab": "chart",
+    "sub_tab": "volume_dimension_bars",
+    "description": "Volume Dimension Bars price-volume profile chart"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330381230",
+    "page_code": "IVAT",
+    "tab": "chart",
+    "sub_tab": "volume_at_time",
+    "description": "Volume at Time intraday study chart"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330404252",
+    "page_code": "HP",
+    "tab": "table",
+    "sub_tab": "historical_price_table",
+    "description": "Historical Price Table daily last and bid prices"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330420216",
+    "page_code": "HCP",
+    "tab": "table",
+    "sub_tab": "historical_price_with_pct_chg",
+    "description": "Historical Price with percent change table"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330435029",
+    "page_code": "HCPI",
+    "tab": "table",
+    "sub_tab": "historical_ohlc_with_pct_chg",
+    "description": "Historical OHLC with percent change table"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330446724",
+    "page_code": "IOP",
+    "tab": "table",
+    "sub_tab": "intraday_ohlc_table",
+    "description": "Intraday OHLC Table hourly intervals"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330462473",
+    "page_code": "GP",
+    "tab": "chart",
+    "sub_tab": "line_chart",
+    "description": "GP Line Chart data table with last price and SMAVG"
+  },
+  {
+    "folder": "igpv",
+    "blob": "1779330499507",
+    "page_code": "TSIG",
+    "tab": "trading_signals",
+    "sub_tab": "sample_signals",
+    "description": "Trading Signals - Sample Signals template list"
+  },
+  {
+    "folder": "lqa",
+    "blob": "",
+    "page_code": "LQA",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "LQA - lqa (unlabeled)"
+  },
+  {
+    "folder": "lqa",
+    "blob": "1779329185209",
+    "page_code": "LQA",
+    "tab": "sector_comparison",
+    "sub_tab": "expected_daily_volume",
+    "description": "Liquidity Assessment - Sector comparison and EDV chart"
+  },
+  {
+    "folder": "lqa",
+    "blob": "1779329247711",
+    "page_code": "LQAP",
+    "tab": "horizon_analysis",
+    "sub_tab": "main",
+    "description": "Portfolio Liquidity Analytics - Horizon analysis redemption"
+  },
+  {
+    "folder": "lqa",
+    "blob": "1779329265023",
+    "page_code": "LQAP",
+    "tab": "horizon_analysis",
+    "sub_tab": "bid_ask_cost",
+    "description": "Portfolio Liquidity Analytics - Bid-ask cost classification"
+  },
+  {
+    "folder": "lqa",
+    "blob": "1779329282675",
+    "page_code": "LQA",
+    "tab": "scenario_analysis",
+    "sub_tab": "main",
+    "description": "Liquidity Assessment - Scenario analysis baseline vs scenario"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326573211",
+    "page_code": "SPLC",
+    "tab": "company_overview",
+    "sub_tab": "related_functions_menu",
+    "description": "SPLC - Supply Chain Analysis related functions menu"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326599768",
+    "page_code": "CAST",
+    "tab": "capital_structure",
+    "sub_tab": "chart",
+    "description": "CAST - Capital Structure issuer/subsidiary chart"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326613613",
+    "page_code": "CHRT",
+    "tab": "chart_library",
+    "sub_tab": "price_and_volume_charts",
+    "description": "CHRT - Chart Library price and volume charts menu"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326628002",
+    "page_code": "DS",
+    "tab": "document_search",
+    "sub_tab": "documents",
+    "description": "DS - Document Search company filings"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326642125",
+    "page_code": "CN",
+    "tab": "news_stories",
+    "sub_tab": "ai_summary",
+    "description": "CN - Company News stories and AI summary"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326788586",
+    "page_code": "DRIV",
+    "tab": "drivers",
+    "sub_tab": "key_exposures",
+    "description": "DRIV - Drivers key exposures vs United States"
+  },
+  {
+    "folder": "menu",
+    "blob": "1779326809244",
+    "page_code": "KI",
+    "tab": "key_insights",
+    "sub_tab": "essential_insights",
+    "description": "KI - Key Insights equity and valuation highlights"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327188185",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "main",
+    "description": "MGMT - Company Management executives roster"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327228159",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "show_career_histories",
+    "description": "MGMT - Executives career histories"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327239517",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "show_performance_data",
+    "description": "MGMT - Executives performance data vs peers"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327263009",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "show_management_history",
+    "description": "MGMT - Executives management history"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327277995",
+    "page_code": "MGMT",
+    "tab": "executives",
+    "sub_tab": "compensation",
+    "description": "MGMT - Executives compensation"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327291509",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "main",
+    "description": "MGMT - Board members roster"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327313590",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "show_career_histories",
+    "description": "MGMT - Board career histories"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327337800",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "show_performance_data",
+    "description": "MGMT - Board performance data"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327349436",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "show_board_history",
+    "description": "MGMT - Board history"
+  },
+  {
+    "folder": "mgmt",
+    "blob": "1779327360344",
+    "page_code": "MGMT",
+    "tab": "board",
+    "sub_tab": "compensation",
+    "description": "MGMT - Board compensation"
+  },
+  {
+    "folder": "mgsn",
+    "blob": "1779327519135",
+    "page_code": "MGSN",
+    "tab": "mgmt_profile",
+    "sub_tab": "management_snapshot",
+    "description": "MGSN - Management Snapshot vs NVDA and QCOM"
+  },
+  {
+    "folder": "mgsn",
+    "blob": "1779327580376",
+    "page_code": "MGHL",
+    "tab": "holdings",
+    "sub_tab": "management_holdings_list",
+    "description": "MGHL - Management holdings by company"
+  },
+  {
+    "folder": "mgsn",
+    "blob": "1779327619217",
+    "page_code": "MGHL",
+    "tab": "holdings",
+    "sub_tab": "management_holdings_detail",
+    "description": "MGHL - Management holdings insider positions"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332659066",
+    "page_code": "OVDV",
+    "tab": "vol_table",
+    "sub_tab": "1_vol_table",
+    "description": "Volatility Surface - Vol Table for AMD US Equity with moneyness grid and Quick Pricer"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332698197",
+    "page_code": "OVDV",
+    "tab": "3d_surface",
+    "sub_tab": "2_3d_surface",
+    "description": "Volatility Surface - 3D Surface with term/moneyness charts"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332712158",
+    "page_code": "OVDV",
+    "tab": "term",
+    "sub_tab": "3_term",
+    "description": "Volatility Surface - Term structure BVOL comparison chart"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332721249",
+    "page_code": "OVDV",
+    "tab": "skew",
+    "sub_tab": "4_skew",
+    "description": "Volatility Surface - Skew comparison by moneyness"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332733099",
+    "page_code": "OVDV",
+    "tab": "dividends",
+    "sub_tab": "5_dividends",
+    "description": "Volatility Surface - Dividends and implied dividend yields"
+  },
+  {
+    "folder": "ovdv",
+    "blob": "1779332744671",
+    "page_code": "OVDV",
+    "tab": "prices",
+    "sub_tab": "6_prices",
+    "description": "Volatility Surface - Prices with call/put bid-ask by expiry"
+  },
+  {
+    "folder": "sceencap",
+    "blob": "",
+    "page_code": "SCEENCAP",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "SCEENCAP - sceencap (unlabeled)"
+  },
+  {
+    "folder": "sceencap",
+    "blob": "1779322097926",
+    "page_code": "GP",
+    "tab": "chart",
+    "sub_tab": "line_chart_1y",
+    "description": "Line Chart - AMD US Equity 1-year price chart"
+  },
+  {
+    "folder": "sceencap",
+    "blob": "1779322299093",
+    "page_code": "EE",
+    "tab": "earnings_estimates",
+    "sub_tab": "current_period_overview",
+    "description": "Earnings and Estimates - Current Period Overview Q2/26"
+  },
+  {
+    "folder": "sceencap",
+    "blob": "1779322327909",
+    "page_code": "FA",
+    "tab": "earnings_trends",
+    "sub_tab": "values_chart",
+    "description": "Financial Analysis - Earnings Trends values chart"
+  },
+  {
+    "folder": "sceencap",
+    "blob": "1779322383856",
+    "page_code": "EEG",
+    "tab": "earnings_estimates_graph",
+    "sub_tab": "main",
+    "description": "Earnings Estimates Graph - Price and EPS estimates"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322451359",
+    "page_code": "DES",
+    "tab": "profile",
+    "sub_tab": "1_profile",
+    "description": "Security Description - Profile page 1 of 5"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322515109",
+    "page_code": "GF",
+    "tab": "related_functions",
+    "sub_tab": "search_h",
+    "description": "Graph Fundamentals - Related functions search H"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322588327",
+    "page_code": "DES",
+    "tab": "function_menu",
+    "sub_tab": "equities_analyze",
+    "description": "Security Description - Equities analyze function menu"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322627056",
+    "page_code": "FA",
+    "tab": "key_stats",
+    "sub_tab": "bbg_adj_highlights",
+    "description": "Financial Analysis - BBG Adjusted Highlights"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322732713",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "graph_fundamentals",
+    "description": "Financial Analysis - Graph Fundamentals market cap vs gross profit"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322812464",
+    "page_code": "FA",
+    "tab": "balance_sheet",
+    "sub_tab": "standardized",
+    "description": "Financial Analysis - Balance Sheet standardized"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322840013",
+    "page_code": "FA",
+    "tab": "balance_sheet",
+    "sub_tab": "as_reported",
+    "description": "Financial Analysis - Balance Sheet as reported"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322853022",
+    "page_code": "FA",
+    "tab": "balance_sheet",
+    "sub_tab": "common_size",
+    "description": "Financial Analysis - Balance Sheet common size"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322865525",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "fair_value_analysis",
+    "description": "Financial Analysis - Fair Value Analysis"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322925069",
+    "page_code": "FA",
+    "tab": "key_stats",
+    "sub_tab": "bbg_gaap_highlights",
+    "description": "Financial Analysis - BBG GAAP Highlights"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322938452",
+    "page_code": "FA",
+    "tab": "segments",
+    "sub_tab": "company_model",
+    "description": "Financial Analysis - Segments company model"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322953327",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "earnings",
+    "description": "Financial Analysis - Additional Earnings annuals"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322962956",
+    "page_code": "FA",
+    "tab": "ratios",
+    "sub_tab": "enterprise_value",
+    "description": "Financial Analysis - Enterprise Value ratios"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322975350",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "ev_ex_operating_leases",
+    "description": "Financial Analysis - EV Ex Operating Leases"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779322996729",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "multiples",
+    "description": "Financial Analysis - Valuation multiples"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323063961",
+    "page_code": "GIP",
+    "tab": "chart",
+    "sub_tab": "intraday",
+    "description": "Intraday Price Chart - AMD daily session"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323136777",
+    "page_code": "FA",
+    "tab": "key_stats",
+    "sub_tab": "per_share",
+    "description": "Financial Analysis - Per Share metrics"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323149119",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "per_share_menu",
+    "description": "Financial Analysis - Per Share navigation menu"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323159656",
+    "page_code": "FA",
+    "tab": "addl",
+    "sub_tab": "stock_value",
+    "description": "Financial Analysis - Stock Value historical"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323202253",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "bbg_adjusted",
+    "description": "Financial Analysis - Income Statement BBG Adjusted"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323269882",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "bbg_gaap",
+    "description": "Financial Analysis - Income Statement BBG GAAP"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323285735",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "as_reported",
+    "description": "Financial Analysis - Income Statement as reported"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323299185",
+    "page_code": "FA",
+    "tab": "reconciliation",
+    "sub_tab": "ebitda_ebit",
+    "description": "Financial Analysis - EBITDA and EBIT reconciliation"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323309358",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "sbc_amort",
+    "description": "Financial Analysis - SBC and Amortization"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323320793",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "adj_pct",
+    "description": "Financial Analysis - Income Statement adjusted percentages"
+  },
+  {
+    "folder": "screencap",
+    "blob": "1779323333289",
+    "page_code": "FA",
+    "tab": "income_statement",
+    "sub_tab": "gaap_pct",
+    "description": "Financial Analysis - Income Statement GAAP percentages"
+  },
+  {
+    "folder": "screenshot",
+    "blob": "1779321364532",
+    "page_code": "DES",
+    "tab": "profile",
+    "sub_tab": "1_profile",
+    "description": "Security Description - Profile for AMD US Equity"
+  },
+  {
+    "folder": "screenshot",
+    "blob": "1779321386792",
+    "page_code": "DES",
+    "tab": "issue_info",
+    "sub_tab": "2_issue_info",
+    "description": "Security Description - Issue Info with public offerings and institutional holdings"
+  },
+  {
+    "folder": "screenshot",
+    "blob": "1779321406634",
+    "page_code": "DES",
+    "tab": "ratios",
+    "sub_tab": "3_ratios",
+    "description": "Security Description - Ratios report"
+  },
+  {
+    "folder": "screenshot",
+    "blob": "1779321424388",
+    "page_code": "DES",
+    "tab": "revenue_eps",
+    "sub_tab": "4_revenue_eps",
+    "description": "Security Description - Revenue and EPS with geo and product segments"
+  },
+  {
+    "folder": "screenshot",
+    "blob": "1779321437745",
+    "page_code": "DES",
+    "tab": "esg",
+    "sub_tab": "5_esg",
+    "description": "Security Description - ESG report and sustainability snapshot"
+  },
+  {
+    "folder": "segments",
+    "blob": "1779323598306",
+    "page_code": "FA",
+    "tab": "segments",
+    "sub_tab": "business_table",
+    "description": "Financial Analysis - Business segments revenue and operating income"
+  },
+  {
+    "folder": "segments",
+    "blob": "1779323611018",
+    "page_code": "FA",
+    "tab": "segments",
+    "sub_tab": "location",
+    "description": "Financial Analysis - Geographic segment location table"
+  },
+  {
+    "folder": "segments",
+    "blob": "1779323632880",
+    "page_code": "FA",
+    "tab": "segments",
+    "sub_tab": "business_detail",
+    "description": "Financial Analysis - Business segment detail by product line"
+  },
+  {
+    "folder": "segments",
+    "blob": "1779323656596",
+    "page_code": "FA",
+    "tab": "segments",
+    "sub_tab": "business_chart",
+    "description": "Financial Analysis - Revenue breakdown Sankey chart 2025"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326347829",
+    "page_code": "SPLC",
+    "tab": "summary",
+    "sub_tab": "main",
+    "description": "Supply Chain Analysis - Summary suppliers and customers"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326367866",
+    "page_code": "SPLC",
+    "tab": "suppliers",
+    "sub_tab": "summary",
+    "description": "Supply Chain Analysis - Suppliers list"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326380345",
+    "page_code": "SPLC",
+    "tab": "suppliers",
+    "sub_tab": "geo_exposure",
+    "description": "Supply Chain Analysis - Suppliers geographic exposure"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326389146",
+    "page_code": "SPLC",
+    "tab": "suppliers",
+    "sub_tab": "key_metrics",
+    "description": "Supply Chain Analysis - Suppliers key metrics and risk"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326443190",
+    "page_code": "SPLC",
+    "tab": "suppliers",
+    "sub_tab": "commodities_materials",
+    "description": "Supply Chain Analysis - Suppliers silicon commodity exposure"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326457932",
+    "page_code": "SPLC",
+    "tab": "suppliers",
+    "sub_tab": "sustainability",
+    "description": "Supply Chain Analysis - Suppliers sustainability scores"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326477163",
+    "page_code": "SPLC",
+    "tab": "customers",
+    "sub_tab": "summary",
+    "description": "Supply Chain Analysis - Customers list"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326487381",
+    "page_code": "SPLC",
+    "tab": "customers",
+    "sub_tab": "geo_exposure",
+    "description": "Supply Chain Analysis - Customers geographic exposure"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326496602",
+    "page_code": "SPLC",
+    "tab": "customers",
+    "sub_tab": "key_metrics",
+    "description": "Supply Chain Analysis - Customers key metrics and risk"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326519263",
+    "page_code": "SPLC",
+    "tab": "customers",
+    "sub_tab": "commodities_materials",
+    "description": "Supply Chain Analysis - Customers silicon commodity exposure"
+  },
+  {
+    "folder": "splc",
+    "blob": "1779326530931",
+    "page_code": "SPLC",
+    "tab": "customers",
+    "sub_tab": "sustainability",
+    "description": "Supply Chain Analysis - Customers sustainability scores"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "",
+    "page_code": "MENU",
+    "tab": "main",
+    "sub_tab": "main",
+    "description": "MENU - Trade analytics menu (unlabeled)"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332788150",
+    "page_code": "MENU",
+    "tab": "trade_analytics",
+    "sub_tab": "function_menu",
+    "description": "Trade Analytics - Equities analyze function menu"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332808815",
+    "page_code": "MDM",
+    "tab": "market_depth",
+    "sub_tab": "activation_required",
+    "description": "Market Depth Monitor - Real-time data required notice"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332864736",
+    "page_code": "IOI",
+    "tab": "ioi_overview",
+    "sub_tab": "trade_adverts_today",
+    "description": "IOI and Advert Overview - Trade adverts by broker"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332884021",
+    "page_code": "IOIO",
+    "tab": "options_ioi",
+    "sub_tab": "ete_live_feed",
+    "description": "Options IOI - ETE live feed trader and security panels"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332894808",
+    "page_code": "IIRA",
+    "tab": "ioi_history",
+    "sub_tab": "main",
+    "description": "IOI and Advert History - Indications and trades log"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332913013",
+    "page_code": "IOIQ",
+    "tab": "ioi_quality",
+    "sub_tab": "activation_required",
+    "description": "IOI Quality Reports - Bloomberg IOI activation required"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332928472",
+    "page_code": "RITA",
+    "tab": "intraday_trade_analysis",
+    "sub_tab": "5m_chart",
+    "description": "Realtime Intraday Trade Analysis - 5 minute chart"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332952404",
+    "page_code": "RANK",
+    "tab": "broker_rankings",
+    "sub_tab": "volume_traded",
+    "description": "Broker Rankings - Volume traded summary prev day"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779332970324",
+    "page_code": "SIDE",
+    "tab": "advertised_trade_sentiment",
+    "sub_tab": "current_day",
+    "description": "Advertised Trade Sentiment - Sunburst by broker"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779333002371",
+    "page_code": "RBLD",
+    "tab": "rule_builder",
+    "sub_tab": "create_rule",
+    "description": "Rule Builder - Create rule alerts blank view"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779333314844",
+    "page_code": "QR",
+    "tab": "trade_recap",
+    "sub_tab": "main",
+    "description": "Trade Quote Recap - Trade recap tape"
+  },
+  {
+    "folder": "trade analytics",
+    "blob": "1779333456802",
+    "page_code": "WEI",
+    "tab": "world_equity_indices",
+    "sub_tab": "main",
+    "description": "World Equity Indices - Global index dashboard"
+  },
+  {
+    "folder": "vwap",
+    "blob": "1779328855417",
+    "page_code": "VWAP",
+    "tab": "by_exchange",
+    "sub_tab": "price_volume_dashboard",
+    "description": "VWAP - Price and volume dashboard by exchange"
+  },
+  {
+    "folder": "vwap",
+    "blob": "1779328867255",
+    "page_code": "VWAP",
+    "tab": "summary",
+    "sub_tab": "largest_impact_trades",
+    "description": "VWAP - Summary largest impact trades"
+  },
+  {
+    "folder": "vwap",
+    "blob": "1779328876362",
+    "page_code": "VWAP",
+    "tab": "volume_at_price",
+    "sub_tab": "by_exchange",
+    "description": "VWAP - Volume at price histogram by exchange"
+  },
+  {
+    "folder": "vwap",
+    "blob": "1779328886153",
+    "page_code": "VWAP",
+    "tab": "by_exchange",
+    "sub_tab": "trade_summary_matrix",
+    "description": "VWAP - Trade summary matrix by price bucket"
+  }
+]

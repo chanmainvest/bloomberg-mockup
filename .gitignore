@@ -1,0 +1,2 @@
+# Regenerable OCR cache (run scripts/build_mockup_data.py from repo root)
+ocr_cache.json
