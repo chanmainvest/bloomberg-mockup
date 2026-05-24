@@ -424,6 +424,15 @@
       background: rgba(255, 153, 0, 0.25);
       border-color: rgba(255, 153, 0, 0.8);
     }
+    /* Sticky Shift visual indicator — shown in any mode while shift
+       is latched. The Shift key itself glows amber + shift-hint
+       message can be added if desired. */
+    .bbg-keyboard .kb-key.kb-key-active {
+      background: rgba(255, 153, 0, 0.65) !important;
+      border-color: var(--amber) !important;
+      box-shadow: 0 0 0 2px var(--amber) inset !important;
+      color: #000 !important;
+    }
 
     /* mode-wire: hide photo + screenshot, show CSS keyboard at full colour
        and hotspots brightened. Used to debug the interactive layer. */
@@ -510,9 +519,9 @@
           <div class="kb-key" style="left:71.4894%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="Home">Home</div>
           <div class="kb-key" style="left:75.7181%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="PageUp">Pg<br>Up</div>
           <div class="kb-key" style="left:81.4628%;top:34.7314%;width:3.2181%;height:9.0268%;" data-cmd="NUMLOCK">Num<br>Lock</div>
-          <div class="kb-key" style="left:85.6915%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="/">&pound;<br>/</div>
-          <div class="kb-key" style="left:89.9468%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="*">&yen;<br>*</div>
-          <div class="kb-key" style="left:94.1223%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="-">&euro;<br>-</div>
+          <div class="kb-key" style="left:85.6915%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="/" data-numpad="1">&pound;<br>/</div>
+          <div class="kb-key" style="left:89.9468%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="*" data-numpad="1">&yen;<br>*</div>
+          <div class="kb-key" style="left:94.1223%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="-" data-numpad="1">&euro;<br>-</div>
           <div class="kb-key" style="left:2.5266%;top:47.2119%;width:5.3457%;height:8.7128%;" data-key="Tab">Tab</div>
           <div class="kb-key" style="left:8.883%;top:47.2119%;width:3.2447%;height:8.7128%;" data-key="q">Q</div>
           <div class="kb-key" style="left:13.0851%;top:47.2119%;width:3.1915%;height:8.7128%;" data-key="w">W</div>
@@ -549,7 +558,7 @@
           <div class="kb-key" style="left:81.4894%;top:59.6139%;width:3.2181%;height:8.0849%;" data-key="4">4<br>&#9664;</div>
           <div class="kb-key" style="left:85.6915%;top:59.6139%;width:3.2713%;height:8.0849%;" data-key="5">5</div>
           <div class="kb-key" style="left:90.3457%;top:59.6139%;width:3.2447%;height:8.0849%;" data-key="6">6<br>&#9654;</div>
-          <div class="kb-key" style="left:94.1223%;top:47.3689%;width:3.2181%;height:21.5858%;" data-key="+">&#8377;<br>+</div>
+          <div class="kb-key" style="left:94.1223%;top:47.3689%;width:3.2181%;height:21.5858%;" data-key="+" data-numpad="1">&#8377;<br>+</div>
           <div class="kb-key" style="left:2.5266%;top:71.8589%;width:8.5372%;height:8.0064%;" data-cmd="SHIFT">Shift</div>
           <div class="kb-key" style="left:11.9947%;top:71.7804%;width:3.2979%;height:8.0849%;" data-key="z">Z</div>
           <div class="kb-key" style="left:16.1702%;top:71.8589%;width:3.2713%;height:8.0064%;" data-key="x">X</div>
@@ -771,6 +780,52 @@
       $("toggleHotspots").textContent = "Hotspots: " + (hotspotsOn ? "ON" : "OFF");
     });
 
+    // --- Sticky Shift ---
+    // Clicking Shift toggles a "shifted" mode that stays on until
+    // Shift is clicked again. While shifted, every other on-screen
+    // key produces its shifted character (letters -> uppercase,
+    // digits -> ! @ # $ % ^ & * ( ), punctuation -> shifted form,
+    // numpad / * - + -> £ ¥ € ₹).
+    let shiftActive = false;
+    const SHIFT_MAP = {
+      '`': '~', '1': '!', '2': '@', '3': '#', '4': '$', '5': '%',
+      '6': '^', '7': '&', '8': '*', '9': '(', '0': ')',
+      '-': '_', '=': '+', '[': '{', ']': '}', '\\': '|',
+      ';': ':', "'": '"', ',': '<', '.': '>', '/': '?',
+    };
+    // Numpad characters that have a Bloomberg currency overlay
+    // when shift is held. Distinct from SHIFT_MAP because the same
+    // ASCII char (e.g. /) means different things on main row vs
+    // numpad — we use the source key element to decide.
+    const NUMPAD_SHIFT_MAP = {
+      '/': '£',   // £
+      '*': '¥',   // ¥
+      '+': '₹',   // ₹  (the tall + key)
+    };
+    // The "-" on numpad shifts to €; the "-" on the main digit row
+    // shifts to "_". We detect numpad-ness by the data-key value of
+    // "*" (only numpad has that), and by the explicit data-numpad
+    // flag if set.
+    function shiftCharFor(key) {
+      const k = key.getAttribute('data-key');
+      if (!k) return null;
+      // Numpad keys are tagged with data-numpad on output
+      if (key.hasAttribute('data-numpad') && NUMPAD_SHIFT_MAP[k]) {
+        return NUMPAD_SHIFT_MAP[k];
+      }
+      if (k === '-' && key.hasAttribute('data-numpad')) return '€';  // €
+      if (k.length === 1 && k >= 'a' && k <= 'z') return k.toUpperCase();
+      if (SHIFT_MAP[k]) return SHIFT_MAP[k];
+      return k;
+    }
+    function setShift(on) {
+      shiftActive = on;
+      document.body.classList.toggle('shift-on', on);
+      document.querySelectorAll('.bbg-keyboard .kb-key[data-cmd="SHIFT"]').forEach((s) => {
+        s.classList.toggle('kb-key-active', on);
+      });
+    }
+
     // --- Keyboard click handling ---
     // Clicking a regular letter/digit key feeds it into the command line.
     // Clicking a Bloomberg coloured key (Equity, GO, etc.) submits its label
@@ -780,10 +835,15 @@
         const dataKey = key.getAttribute('data-key');
         const dataCmd = key.getAttribute('data-cmd');
         if (dataCmd) {
+          // Sticky Shift: toggle the shift mode and stop here.
+          if (dataCmd === 'SHIFT') {
+            setShift(!shiftActive);
+            return;
+          }
           // Bloomberg function key — submit the command label
           if (dataCmd === 'END_BACK') { cmdHide(); return; }
           if (dataCmd === 'CMND_HIST' || dataCmd === 'CTRL' ||
-              dataCmd === 'SHIFT' || dataCmd === 'CAPSLOCK' ||
+              dataCmd === 'CAPSLOCK' ||
               dataCmd === 'ALT_BADGES' || dataCmd === 'PANEL' ||
               dataCmd === 'PRINT' || dataCmd === 'SCROLL' ||
               dataCmd === 'NUMLOCK' || dataCmd === 'LOGOFF' ||
@@ -822,10 +882,11 @@
           if (dataKey === 'ArrowLeft')  { goTo(idx - 1); return; }
           if (dataKey === 'ArrowRight') { goTo(idx + 1); return; }
           if (dataKey === 'ArrowUp' || dataKey === 'ArrowDown') return;
-          // Printable character
+          // Printable character — apply sticky-shift transform
           if (dataKey.length === 1) {
-            if (!cmdActive) cmdShow(dataKey);
-            else { cmdBuffer += dataKey; cmdTextEl.textContent = cmdBuffer; }
+            const ch = shiftActive ? shiftCharFor(key) : dataKey;
+            if (!cmdActive) cmdShow(ch);
+            else { cmdBuffer += ch; cmdTextEl.textContent = cmdBuffer; }
           }
         }
       });
