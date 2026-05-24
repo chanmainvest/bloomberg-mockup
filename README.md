@@ -44,4 +44,4 @@ OCR hotspot cache (optional, ignored by git): `ocr_cache.json`
 
 ## License
 
-MIT — see [LICENSE](../LICENSE).
+MIT — see [LICENSE](LICENSE).
