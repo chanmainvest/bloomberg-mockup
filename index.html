@@ -334,6 +334,31 @@
     .kb-blue   { --kcol: #2477cc; --kbord: #1a578f; --kfg: #fff; }
     .kb-red    { --kcol: #c43030; --kbord: #832020; --kfg: #fff; }
     .kb-white  { --kcol: #e6e6e6; --kbord: #a8a8a8; --kfg: #000; }
+    /* Bloomberg wordmark — overlaid in wire mode only, positioned to
+       match where it appears on the real keyboard photo. Coordinates
+       come from OCR-detected position of the "Bloomberg" text in
+       reference.png: x=89.0%..97.8%, y=6.3%..12.5%. The width is
+       intentionally generous so the text doesn't clip when the
+       container is narrow. */
+    .kb-bloomberg-logo {
+      position: absolute;
+      left: 86%;
+      top: 4%;
+      width: 14%;
+      height: 9%;
+      display: none;  /* shown only in wire mode (see below) */
+      color: #ffffff;
+      font-family: "Bloomberg Prop", "Segoe UI", sans-serif;
+      font-weight: bold;
+      font-size: clamp(10px, 1.7vw, 26px);
+      line-height: 1;
+      pointer-events: none;
+      letter-spacing: -0.5px;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      white-space: nowrap;
+    }
 
     /* Status row hosts the view-mode toggle */
     .status-bar {
@@ -407,6 +432,7 @@
     body.mode-wire .hotspot { background: rgba(255, 153, 0, 0.55); }
     body.mode-wire .kb-photo { opacity: 0.05; filter: grayscale(1); }
     body.mode-wire .bbg-keyboard { background: #000; }
+    body.mode-wire .kb-bloomberg-logo { display: flex; }
     body.mode-wire .bbg-keyboard .kb-key {
       background: var(--kcol, #2a2a2a);
       border: 1px solid var(--kbord, #444);
@@ -484,9 +510,9 @@
           <div class="kb-key" style="left:71.4894%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="Home">Home</div>
           <div class="kb-key" style="left:75.7181%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="PageUp">Pg<br>Up</div>
           <div class="kb-key" style="left:81.4628%;top:34.7314%;width:3.2181%;height:9.0268%;" data-cmd="NUMLOCK">Num<br>Lock</div>
-          <div class="kb-key" style="left:85.6915%;top:34.7314%;width:3.2447%;height:9.0268%;">&pound;</div>
-          <div class="kb-key" style="left:89.9468%;top:34.7314%;width:3.2447%;height:9.0268%;">&yen;</div>
-          <div class="kb-key" style="left:94.1223%;top:34.7314%;width:3.2181%;height:9.0268%;">&euro;</div>
+          <div class="kb-key" style="left:85.6915%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="/">&pound;<br>/</div>
+          <div class="kb-key" style="left:89.9468%;top:34.7314%;width:3.2447%;height:9.0268%;" data-key="*">&yen;<br>*</div>
+          <div class="kb-key" style="left:94.1223%;top:34.7314%;width:3.2181%;height:9.0268%;" data-key="-">&euro;<br>-</div>
           <div class="kb-key" style="left:2.5266%;top:47.2119%;width:5.3457%;height:8.7128%;" data-key="Tab">Tab</div>
           <div class="kb-key" style="left:8.883%;top:47.2119%;width:3.2447%;height:8.7128%;" data-key="q">Q</div>
           <div class="kb-key" style="left:13.0851%;top:47.2119%;width:3.1915%;height:8.7128%;" data-key="w">W</div>
@@ -523,7 +549,7 @@
           <div class="kb-key" style="left:81.4894%;top:59.6139%;width:3.2181%;height:8.0849%;" data-key="4">4<br>&#9664;</div>
           <div class="kb-key" style="left:85.6915%;top:59.6139%;width:3.2713%;height:8.0849%;" data-key="5">5</div>
           <div class="kb-key" style="left:90.3457%;top:59.6139%;width:3.2447%;height:8.0849%;" data-key="6">6<br>&#9654;</div>
-          <div class="kb-key" style="left:94.1223%;top:47.3689%;width:3.2181%;height:21.5858%;">+</div>
+          <div class="kb-key" style="left:94.1223%;top:47.3689%;width:3.2181%;height:21.5858%;" data-key="+">&#8377;<br>+</div>
           <div class="kb-key" style="left:2.5266%;top:71.8589%;width:8.5372%;height:8.0064%;" data-cmd="SHIFT">Shift</div>
           <div class="kb-key" style="left:11.9947%;top:71.7804%;width:3.2979%;height:8.0849%;" data-key="z">Z</div>
           <div class="kb-key" style="left:16.1702%;top:71.8589%;width:3.2713%;height:8.0064%;" data-key="x">X</div>
@@ -554,6 +580,7 @@
           <div class="kb-key" style="left:81.4628%;top:84.2609%;width:7.4734%;height:8.5558%;" data-key="Insert">Ins</div>
           <div class="kb-key" style="left:89.9468%;top:84.2609%;width:3.2181%;height:8.5558%;" data-key="Delete">Del</div>
           <div class="kb-key kb-green" style="left:93.9628%;top:71.388%;width:3.5638%;height:22.9202%;" data-key="Enter">Enter<br>GO</div></div>
+            <div class="kb-bloomberg-logo" aria-hidden="true">Bloomberg</div>
           </div>
         </div>
 
