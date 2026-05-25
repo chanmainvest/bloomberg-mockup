@@ -437,12 +437,19 @@
     /* Bloomberg red toolbar — reconstructed in wire view from
        per-screen `red_toolbar` data. Hidden in Photo / Both modes
        because the photo already contains the original toolbar.
-       Full spec: design/red-toolbar/README.md. */
+       Full spec: design/red-toolbar/README.md.
+
+       The toolbar's own background is painted the dim-red separator
+       colour Bloomberg uses for the gutters between sections
+       (measured RGB(52,4,10) = #34040a on BIO_people_profiles_lisa_su).
+       Sections paint themselves over the top in either red or orange,
+       so the 1-3 px gaps left between adjacent section divs show
+       through as the visible separator lines users expect. */
     .red-toolbar {
       position: absolute;
       left: 0;
       width: 100%;
-      background: #891d1d;
+      background: #34040a;   /* separator line colour */
       color: #ffffff;
       font-family: "Bloomberg Prop", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
       /* Regular weight throughout — the visual contrast on the typeable
@@ -460,13 +467,14 @@
       display: flex;
       align-items: center;
       padding: 0 0.4cqh;
-      white-space: nowrap;
+      white-space: pre;
       font-size: 2.15cqh;
       line-height: 1;
       box-sizing: border-box;
+      overflow: hidden;
     }
     .red-toolbar .seg.bg-orange {
-      background: #ff9f00;
+      background: transparent;
       color: #000000;
     }
     /* Section rectangles — drawn from photo-detected box boundaries
@@ -476,9 +484,35 @@
       top: 0;
       height: 100%;
       background: #891d1d;
+      overflow: hidden;
     }
     .red-toolbar .section.bg-orange {
       background: #ff9f00;
+    }
+    /* When .seg sits inside a .section it should fill the section and
+       clip overflow text to the section bounds — so a dropdown marker
+       that doesn't fit gets clipped rather than spilling visually into
+       the adjacent section. */
+    .red-toolbar .section .seg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: auto;
+    }
+    /* Right-aligned section text (e.g. "People Profiles" sitting at
+       the far right of a wide section in the photo). */
+    .red-toolbar .section .seg.align-right {
+      justify-content: flex-end;
+    }
+    /* Bloomberg's dropdown indicator. OCR commonly returns the ▼
+       glyph as a stray hyphen ("Advanced Search -Actions -My Profile")
+       so renderRedToolbar() rewrites those back to ▼. The marker
+       renders at the same colour as the surrounding text but slightly
+       smaller, with leading/trailing space to keep it readable. */
+    .red-toolbar .seg-dropdown {
+      display: inline-block;
+      padding: 0 0.4em;
+      font-size: 0.95em;
     }
     /* Sub-styles inside red-toolbar segments. Three visual groupings,
        all tuned against DES_profile_1_profile.jpg via the OpenCV
@@ -782,8 +816,11 @@
       if (rt.bg_color) toolbarEl.style.background = rt.bg_color;
       // First, paint each detected section as a positioned box so the
       // wireframe matches the photo's box layout. Sections are full
-      // bar height; the bar's own background colour serves as the
-      // separator gutter between them.
+      // bar height; the bar's own dim-red background fills the 1-3 px
+      // gaps between adjacent section divs so they read as separator
+      // lines. Each section is its own overflow:hidden container so
+      // that segment text rendered inside it gets clipped to the
+      // section's edges, not spilling into neighbours.
       const sectionEls = (rt.sections || []).map((sec) => {
         const sEl = document.createElement("div");
         sEl.className = "section bg-" + (sec.bg || "red");
@@ -792,43 +829,113 @@
         toolbarEl.appendChild(sEl);
         return sEl;
       });
-      // Then, paint each OCR segment inside its parent section so the
-      // text x/y stays anchored to the photo position while colour
-      // styling (amber prefix / page indicator) still works.
-      (rt.segments || []).forEach((seg) => {
+      // Rewrite OCR artifacts: dropdown markers (▼) commonly come
+      // back as " -" attached to the next word, which collapses
+      // "Advanced Search ▼ | Actions ▼ | …" into "Advanced Search
+      // -Actions -My Profile". Fix by replacing the pattern.
+      function fixDropdownMarkers(text) {
+        // " -Word" between caps → " ▼ Word"
+        return text.replace(/\s*-(?=[A-Z<])/g, " ▼ ");
+      }
+      function appendStyled(parent, text) {
+        // Split on the ▼ unicode glyph so we can give it its own span.
+        const parts = text.split("▼");
+        for (let i = 0; i < parts.length; i++) {
+          if (parts[i]) parent.appendChild(document.createTextNode(parts[i]));
+          if (i < parts.length - 1) {
+            const dd = document.createElement("span");
+            dd.className = "seg-dropdown";
+            dd.textContent = "▼";
+            parent.appendChild(dd);
+          }
+        }
+      }
+      // Helper: build one .seg element. The section it belongs to
+      // becomes its parent (so overflow:hidden on .section clips the
+      // text), and the .seg fills the parent via the CSS rule
+      // .red-toolbar .section .seg { left:0; right:0 }.
+      function makeSegEl(text, section, label) {
         const el = document.createElement("div");
-        el.className = "seg bg-" + (seg.bg || "red");
-        el.style.left = seg.x + "%";
-        el.style.width = seg.w + "%";
-        if (seg.label) {
-          // Numbered shortcut "98) Report" → amber regular "98)" + white " Report"
+        el.className = "seg bg-" + (section.bg || "red");
+        if (label) {
           const numEl = document.createElement("span");
           numEl.className = "seg-amber seg-num";
-          numEl.textContent = seg.label + ")";
-          const rest = seg.text.replace(/^\s*\d+\s*\)\s*/, "");
+          numEl.textContent = label + ")";
           el.appendChild(numEl);
-          if (rest) el.appendChild(document.createTextNode(rest));
+          const rest = text.replace(/^\s*\d+\s*\)\s*/, "");
+          if (rest) appendStyled(el, rest);
         } else {
-          // Page indicator "Page 1/5 Security Description: Equity"
-          // → smaller-white "Page 1/5" + default-white tail
-          const pageMatch = seg.text.match(/^(\s*Page\s+\d+(?:\s*\/\s*\d+)?)\b(.*)$/);
+          const pageMatch = text.match(/^(\s*Page\s+\d+(?:\s*\/\s*\d+)?)\b(.*)$/);
           if (pageMatch) {
             const pageEl = document.createElement("span");
             pageEl.className = "seg-pageref";
             pageEl.textContent = pageMatch[1].trim();
             el.appendChild(pageEl);
             const tail = pageMatch[2].replace(/^[\s:]+/, "");
-            if (tail) el.appendChild(document.createTextNode(tail));
+            if (tail) appendStyled(el, tail);
           } else {
-            el.textContent = seg.text;
+            appendStyled(el, text);
           }
         }
-        if (seg.target != null && seg.target >= 0 && seg.target < screens.length) {
-          el.classList.add("clickable");
-          el.title = seg.label ? (seg.label + ") " + seg.text) : seg.text;
-          el.addEventListener("click", () => { cmdHide(); goTo(seg.target); });
+        return el;
+      }
+
+      // OCR sometimes merges adjacent menu chips into one segment (e.g.
+      // BIO returns "Advanced Search ▼ Actions ▼ My Profile" as one
+      // bbox spanning three sections). Detect that case via dropdown
+      // markers + section overlap, then render one .seg per section
+      // anchored to the *section* x/w — so each item sits in its own
+      // box like the photo.
+      const sectionList = (rt.sections || []);
+      (rt.segments || []).forEach((seg) => {
+        const cleanText = fixDropdownMarkers(seg.text);
+        // Sections whose x-range overlaps this segment's bbox.
+        const segL = seg.x;
+        const segR = seg.x + seg.w;
+        const overlapping = sectionList
+          .map((s, i) => ({ i, x: s.x, x1: s.x + s.w, bg: s.bg }))
+          .filter((s) => !(s.x1 < segL || s.x > segR));
+        // Split text on ▼ markers, keeping the ▼ glued to the
+        // preceding word (so each chip reads "Word ▼").
+        const parts = cleanText
+          .split(/(?<=▼)/)
+          .map((p) => p.trim())
+          .filter((p) => p.length);
+
+        let assignSegs;
+        if (parts.length === overlapping.length && parts.length > 1) {
+          assignSegs = overlapping.map((s, i) => ({ sectionIdx: s.i, text: parts[i] }));
+        } else {
+          // Single chunk — keep in its assigned (centre-based) section.
+          const homeIdx = seg.section != null
+            ? seg.section
+            : overlapping[0]?.i ?? 0;
+          assignSegs = [{ sectionIdx: homeIdx, text: cleanText }];
         }
-        toolbarEl.appendChild(el);
+
+        assignSegs.forEach(({ sectionIdx, text }) => {
+          const section = sectionList[sectionIdx];
+          if (!section) return;
+          const label = seg.label;
+          const el = makeSegEl(text, section, label);
+          // If this segment sits far to the right of its section (e.g.
+          // "People Profiles" right-aligned at the end of the wide
+          // panel section), flex-align the seg content to the right
+          // so it visually lands where the photo puts it.
+          if (assignSegs.length === 1) {
+            const segOffset = (seg.x - section.x) / Math.max(section.w, 0.01);
+            if (segOffset > 0.4) el.classList.add("align-right");
+          }
+          if (seg.target != null && seg.target >= 0 && seg.target < screens.length) {
+            el.classList.add("clickable");
+            el.title = label ? (label + ") " + text) : text;
+            el.addEventListener("click", () => { cmdHide(); goTo(seg.target); });
+          }
+          // Append to the matching section container so overflow gets
+          // clipped to that section's box.
+          const parent = sectionEls[sectionIdx] || toolbarEl;
+          parent.appendChild(el);
+        });
       });
     }
 
