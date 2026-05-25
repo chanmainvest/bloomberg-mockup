@@ -94,6 +94,8 @@
       flex: 0 0 auto;
       width: 100%;
       aspect-ratio: 1091 / 812;
+      container-type: size;
+      container-name: screen;
     }
     .screen-inner img {
       width: 100%;
@@ -164,7 +166,7 @@
       z-index: 41;
       color: #ffffff;
       font-family: "Bloomberg Fixed", "Consolas", "Lucida Console", "Courier New", monospace;
-      font-size: 17px;
+      font-size: 2.1cqh;
       line-height: 1;
       display: none;
       pointer-events: none;
@@ -176,7 +178,6 @@
       top: 9.4%;
       width: 64.7%;
       height: 3.1%;
-      min-height: 22px;
       z-index: 40;
       display: none;
       align-items: center;
@@ -186,22 +187,21 @@
       pointer-events: none;
     }
     .cmd-line.active { display: flex; }
-    /* Static right-pointing triangle (Bloomberg's input prompt indicator)
-       Sized to nearly full box height (10+10=20px) for a chunky look */
+    /* Static right-pointing triangle (Bloomberg's input prompt indicator) */
     .cmd-line .cmd-triangle {
       flex-shrink: 0;
       width: 0;
       height: 0;
-      border-top: 11px solid transparent;
-      border-bottom: 11px solid transparent;
-      border-left: 9px solid #1A8FFF;
+      border-top: 1.35cqh solid transparent;
+      border-bottom: 1.35cqh solid transparent;
+      border-left: 1.1cqh solid #1A8FFF;
       margin-left: 0;
     }
     /* Blinking solid blue rectangle cursor — nearly full box height */
     .cmd-line .cmd-cursor {
       flex-shrink: 0;
       display: inline-block;
-      width: 10px;
+      width: 1.23cqh;
       height: calc(100% - 2px);
       background: #1A8FFF;
       margin-left: 0;
@@ -210,12 +210,12 @@
     .cmd-line .cmd-text {
       color: #ffffff;
       font-family: "Bloomberg Fixed", "Consolas", "Lucida Console", "Courier New", monospace;
-      font-size: 17px;
+      font-size: 2.1cqh;
       font-weight: normal;
       letter-spacing: 0.3px;
       white-space: pre;
       line-height: 1;
-      margin-left: 4px;
+      margin-left: 0.5cqh;
       text-transform: uppercase;
     }
     @keyframes blink { 50% { opacity: 0; } }
