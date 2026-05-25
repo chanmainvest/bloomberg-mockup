@@ -444,10 +444,10 @@
       background: #891d1d;
       color: #ffffff;
       font-family: "Bloomberg Prop", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-      /* Bloomberg renders the static white labels in the red header bar
-         in bold; the amber typeable hints stay at regular weight, which
-         is what gives them the "narrower" look. */
-      font-weight: 700;
+      /* Regular weight throughout — the visual contrast on the typeable
+         hints comes from horizontal narrowing (amber prefix) and a
+         smaller font size (page indicator), not bold weight. */
+      font-weight: 400;
       z-index: 28;
       display: none;
       overflow: hidden;
@@ -468,26 +468,25 @@
       background: #ff9f00;
       color: #000000;
     }
-    /* Sub-styles inside red-bar segments. Bloomberg paints the typeable
-       hints in regular weight (which is what makes them look "narrower"
-       next to the bold white label tail) and recolours numbered shortcut
-       prefixes to amber. Measured on DES_profile_1_profile.jpg:
-         "98)" glyphs → most-common saturated pixel RGB(236,165,30) #eca51e
-         "Page 1/5" glyphs → bright pixels RGB ~ (255,255,255), but the
-            character density is roughly 36% vs 41% for the bold label
-            beside it — confirming a regular/bold weight split, not a
-            colour split.
-       Default seg text is bold white (set on .red-bar). */
+    /* Sub-styles inside red-bar segments. Bloomberg paints typeable
+       hints visibly tighter than the descriptive label tail beside
+       them. We reproduce the same width ratio (~0.57 amber:white per
+       char, measured on DES_profile_1_profile.jpg) by:
+         - amber prefix ("98)") → narrowed horizontally via scaleX,
+           keeping the glyph height; tabular numerals for stable digits
+         - page indicator ("Page N/M") → slightly smaller font size,
+           shrinking width and height together
+       Colour for the amber prefix: RGB(236,165,30) = #eca51e, the
+       most-common saturated text pixel on the "98)" glyphs. */
     .red-bar .seg-amber {
       color: #eca51e;
-      font-weight: 400;
+      display: inline-block;
+      transform: scaleX(0.78);
+      transform-origin: left center;
       font-variant-numeric: tabular-nums;
     }
     .red-bar .seg-pageref {
-      /* Same regular-weight treatment as the amber prefix, but kept
-         white because Bloomberg does not amber-tint the Page N/M
-         indicator (it's informational, not typeable). */
-      font-weight: 400;
+      font-size: 0.82em;
       font-variant-numeric: tabular-nums;
     }
     .red-bar .seg-num,
@@ -496,7 +495,6 @@
       /* On an already-amber background the amber glyphs would vanish;
          fall back to the same dark text used for the rest of the chip. */
       color: #000000;
-      font-weight: 700;
     }
     .red-bar .seg.clickable {
       cursor: pointer;
