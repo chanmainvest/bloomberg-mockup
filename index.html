@@ -464,6 +464,19 @@
       background: #ff9f00;
       color: #000000;
     }
+    /* Numbered link prefix ("98)") — Bloomberg renders these in amber to
+       cue that the digits can be typed at the command line. Measured the
+       glyph color on DES_profile_1_profile.jpg → ~RGB(236,165,30). */
+    .red-bar .seg-num {
+      color: #ecaa1e;
+      font-variant-numeric: tabular-nums;
+      margin-right: 0.35cqh;
+    }
+    .red-bar .seg.bg-orange .seg-num {
+      /* On an already-amber background the amber digits would vanish;
+         fall back to the same dark text used for the rest of the chip. */
+      color: #000000;
+    }
     .red-bar .seg.clickable {
       cursor: pointer;
       outline: 1px solid rgba(255, 153, 0, 0.0);
@@ -744,7 +757,17 @@
         el.className = "seg bg-" + (seg.bg || "red");
         el.style.left = seg.x + "%";
         el.style.width = seg.w + "%";
-        el.textContent = seg.text;
+        if (seg.label) {
+          // Split "98) Report" → amber "98)" + white " Report"
+          const numEl = document.createElement("span");
+          numEl.className = "seg-num";
+          numEl.textContent = seg.label + ")";
+          const rest = seg.text.replace(/^\s*\d+\s*\)\s*/, "");
+          el.appendChild(numEl);
+          if (rest) el.appendChild(document.createTextNode(rest));
+        } else {
+          el.textContent = seg.text;
+        }
         if (seg.target != null && seg.target >= 0 && seg.target < screens.length) {
           el.classList.add("clickable");
           el.title = seg.label ? (seg.label + ") " + seg.text) : seg.text;
